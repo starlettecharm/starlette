@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div class = "navbar-left">
+                <h2> <a href = "index.html" id = "logo"> Starlette </a> </h2>
+            </div>
+            <div class = "navbar-center">
+            <button class = "hamburger" onclick = "toggleMenu()">&#9776;</button>
+            <ul id = "navbar-menu">
+                <li> <a href = "pricing.html"> PRICING </a> </li>
+                <li> <a href = "testimonials.html"> TESTIMONIALS </a> </li>
+                <li> <a href = "faqs.html"> FAQs </a> </li>
+                <li> <a href = "index.html#about-us"> ABOUT US </a> </li>
+            </ul>
+            </div>
+            <div class = "navbar-right">
+                <a href = "myProfile.html" class = "btn"> My Profile </a>
+            </div>
+        </nav>
+
+        <div class = "content">
+            <div class = "text-column">
+                <h1>Seamless Designs, <br> Flawless Edits</h1>
+                <p>We turn your ideas into visuals that make an impact. Whether you need standout graphic designs to elevate your brand or polished video edits to tell your story, we’re here to bring your vision to life. Every project is approached with care and precision, ensuring every detail aligns with your goals.</p>
+                <a href = "requestQuote.html" class = "btn"> REQUEST A QUOTE </a>
+            </div>
+            <div class = "image-column">
+                <img src = "homepage.png" alt = "homepage-image" 
+                style = "width: 100%;">
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("navbar-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+
+        <footer class = "footer">
+            <div class = "footer-content">
+                <div class = "footer-left" id = "about-us">
+                <h1> About <span class = "highlight"> Starlette </span></h1>
+                <p>Starlette is where creativity meets brilliance— just like a <span class = "highlight">star</span> that shines and a <span class = "highlight"> palette </span> that brings colors to life. Run by a college student with a passion for design and editing, we craft stunning visuals that make an impact.</p>
+                <p id = "copyright">© 2025 Starlette. Seamless Designs, Flawless Edits.</p>
+                </div>
+
+                <div class = "footer-right">
+                <form class = "newsletter-form">
+                    <input type = "email" placeholder = "Email" required>
+                    <button class = "btn" id = "submit">STAY CONNECTED</button>
+                </form>
+                </div>
+        </footer>
+
+    </body>
+    </html>
